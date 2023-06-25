@@ -56,4 +56,30 @@ def verifica_idade(idades):
   else:
     print(f'{idade} anos de idade, não tem permissão para dirigir')
 verifica_idade(idades)
+"""# Booleano"""
+
+idade = 18
+idade >=18
+
+idade = 15
+idade >=18
+
+permissoes = []
+idades = [20, 14, 40]
+
+def verifica_idade(idades,permissoes):
+  for idade in idades:
+    if idade >= 18:
+      permissoes.append(True)
+    else:
+        permissoes.append(False)
+verifica_idade(idades,permissoes)
+
+permissoes
+
+for permissao in permissoes:
+  if permissao == True:
+    print('Tem permissão para dirigir')
+  else:
+    print('Não tem permissão para dirigir')
 
